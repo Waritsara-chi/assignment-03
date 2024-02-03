@@ -1,0 +1,116 @@
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+
+<div class="container">
+  <!-- Section 1 -->
+  <div class="text-head">
+    <div class="ipc-title--subsection-title"></div>
+    <h2 class="text">Top 10 on IMDb this week</h2>
+  </div>
+
+  <div class="row" style="height: 550px">
+    <!-- chevron_left -->
+    <a href="#" *ngIf="currentIndex >= 1">
+      <span
+        class="material-symbols-outlined arrow left-arrow"
+        style="margin-left: 13.7%; padding-top: 10px; padding-bottom: 10px;"
+        (click)="LeftSlice()"
+      >
+        chevron_left
+      </span>
+    </a>
+
+    <div
+      *ngFor="
+        let title of titlesResult.title.slice(
+          0 + currentIndex,
+          6 + currentIndex
+        )
+      "
+      style="padding-left: 20px"
+    >
+      <app-titlecard
+        [title]="title.name"
+        [image]="title.image"
+        [rating]="title.aggregateRating.ratingValue"
+        [routerLink]="['title/', title.id]"
+      >
+      </app-titlecard>
+    </div>
+
+    <!-- chevron_right -->
+    <a href="#">
+      <span
+        class="material-symbols-outlined arrow right-arrow"
+        style="margin-right: 14.3%; padding-top: 10px; padding-bottom: 10px"
+        (click)="Rightslice()"
+      >
+        chevron_right
+      </span>
+    </a>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="text-head" style="margin-top: -4.5%">
+    <div class="ipc-title--subsection-title"></div>
+    <h2 class="text">
+      Born today
+      <svg
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        class="ipc-icon ipc-icon--chevron-right-inline ipc-icon--inline ipc-title-link ipc-title-link-chevron"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        role="presentation"
+      >
+        <path
+          d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"
+        ></path>
+      </svg>
+    </h2>
+  </div>
+  <div class="text-describe">People born on January 15</div>
+
+  <div class="row" style="height: 300px">
+    <!-- chevron_left -->
+    <a *ngIf="actorIndex >= 1">
+      <span
+        class="material-symbols-outlined arrow2 left-arrow"
+        style="margin-left: 13.7%; padding-top: 10px; padding-bottom: 10px"
+        (click)="LeftActorSlice()"
+      >
+        chevron_left
+      </span>
+    </a>
+
+    <div
+      *ngFor="
+        let actor of titlesResult.name.slice(0 + actorIndex, 6 + actorIndex)
+      "
+      style="padding-left: 20px; cursor: pointer"
+    >
+      <a [routerLink]="['/actor/', actor.id]">
+        <app-actorcard
+          [image]="actor.image"
+          [actorname]="actor.name"
+          [age]="actor.mainEntity.age"
+        ></app-actorcard>
+      </a>
+    </div>
+
+    <!-- chevron_right -->
+    <a>
+      <span
+        class="material-symbols-outlined arrow2 right-arrow"
+        style="margin-right: 14.3%; padding-top: 10px; padding-bottom: 10px"
+        (click)="RightActorslice()"
+      >
+        chevron_right
+      </span>
+    </a>
+  </div>
+</div>
+

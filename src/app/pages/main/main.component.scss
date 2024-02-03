@@ -1,0 +1,112 @@
+.contianer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
+  justify-content: center;
+//   overflow-y: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+  max-width: 65%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto; /* เพิ่ม margin-left และ margin-right เพื่อจัดให้ .row อยู่ตรงกลาง */
+}
+
+.text-head {
+  display: flex;
+  // align-items: center;
+  flex-direction: row;
+  max-width: 65%;
+  height: min-content;
+  margin-left: 19.2%;
+  margin-right: auto; /* เพิ่ม margin-left และ margin-right เพื่อจัดให้ .text-head อยู่ตรงกลาง */
+  margin-bottom: 0%;
+}
+
+.text-describe {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  max-width: 65%;
+  height: min-content;
+  margin-left: 18.5%;
+  margin-right: auto; /* เพิ่ม margin-left และ margin-right เพื่อจัดให้ .text-head อยู่ตรงกลาง */
+  margin-bottom: 0%;
+}
+
+.ipc-title--subsection-title {
+  background: #f5c518;
+  border-radius: 20px;
+  content: "";
+  margin-left: -0.75rem;
+  align-self: flex-start;
+  position: absolute;
+  height: 30px;
+  width: 4px;
+  margin-top: 19px;
+}
+
+/* ปรับความกว้างของ .row ให้ไม่เกินกว่าความกว้างสูงสุด */
+.row > div {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.text {
+  color: white;
+}
+
+.ipc-icon {
+  vertical-align: middle;
+}
+
+.arrow {
+  font-size: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  color: white;
+  background-color: #64655a6e;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.arrow2 {
+  font-size: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 80%;
+  z-index: 1;
+  color: white;
+  background-color: #64655a6e;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.arrow:hover {
+  color: #f5c518;
+}
+
+.left-arrow {
+  border: 0.1rem solid white;
+  left: 3.5%;
+  margin-left: 20%;
+}
+
+.right-arrow {
+  border: 0.1rem solid white;
+  right: 3.5%;
+  margin-right: -18px;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}

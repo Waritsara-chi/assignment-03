@@ -1,0 +1,145 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-row {
+  display: flex;
+  // width: 100%;
+}
+
+.font {
+  color: gray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.v-font {
+  color: white;
+}
+
+.ipc-rating-star--baseAlt.ipc-rating-star--rate {
+  color: #5799ef;
+}
+
+.jIEDat {
+  color: gray;
+  margin-right: 2px;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.jIEDat2 {
+  color: rgb(103, 173, 75);
+  margin-right: 2px;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: white;
+  font-size: 65px;
+  font-weight: lighter;
+}
+
+.play {
+  color: white;
+  font-size: 29px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2b2b2b;
+}
+
+.btn {
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+  margin-top: 0%;
+  background-color: #3f3f3fd0;
+}
+
+.btn-genre {
+  color: rgb(255, 255, 255);
+  border: 0.5px solid white;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.describe {
+  width: 91%;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 0%;
+}
+hr {
+  height: 1px;
+  margin: 1rem 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.507);
+  border: 0;
+  margin: 10px 0;
+  opacity: 0.5;
+  color: inherit;
+  // border-top: 1px solid;
+}
+
+li.head {
+  list-style-type: none;
+  text-align: start;
+}
+
+li.sub {
+  list-style-type: none;
+}
+
+ul.sub {
+  padding-left: 20px;
+}
+
+ul.font {
+  color: white;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.font {
+  color: #5799ef;
+  font-size: 16px;
+  font-weight: light;
+}
+
+img {
+  object-fit: cover;
+}
+
+.addbtn {
+  background-color: #f5c518;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 15px;
+  height: 50px;
+}
+
+.material-symbols-outlined {
+  color: black;
+  font-size: 30px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

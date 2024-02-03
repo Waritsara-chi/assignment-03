@@ -1,0 +1,31 @@
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
+
+<div class="contianer">
+  <a href="javascript:history.back()">
+    <div class="row" style="margin-left: -20px;">
+      <span class="material-symbols-outlined arrow left-arrow" style="font-size: 50px; margin-top: 15px; margin-right: -10px; color: rgb(255, 206, 28);">
+        chevron_left
+      </span>
+      <h1>Back</h1>
+    </div>
+  </a>
+
+  <div style="margin-top: -20px;">
+    <app-title
+      [title]="title.name"
+      [rating]="title.aggregateRating.ratingValue"
+      [image]="title.image"
+      [trailer]="title.trailer.embedUrl"
+      [genre]="title.genre"
+      [thumbnail]="title.trailer.thumbnail.contentUrl"
+      [dateCreated]="title.review.dateCreated"
+      [description]="title.description"
+      [director]="title.director"
+      [creator]="title.creator"
+      [actor]="title.actor"
+    ></app-title>
+  </div>
+</div>

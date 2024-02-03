@@ -1,0 +1,59 @@
+.card {
+  background-color: rgba(43, 42, 42, 0.733);
+  width: 180px;
+  height: 470px;
+}
+
+.font {
+  color: white;
+  font-size: 15px;
+  height: 38px;
+  text-decoration: none;
+  padding-left: 10px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.font:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.fontRate {
+  color: white;
+}
+
+.ipc-rating-star--baseAlt.ipc-rating-star--rate {
+  color: #5799ef;
+}
+
+.ipc-rating-star--baseAlt.ipc-rating-star--rate:hover {
+  color: #ffffff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.ipc-btn__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ipc-icon {
+  vertical-align: middle;
+}
+
+.ipc-btn__icon--pre {
+  margin-right: 0.25rem;
+  margin-left: -0.375rem;
+}
+
+.ipc-btn__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
